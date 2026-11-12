@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow — Your daily command center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="intro-loader" id="introLoader" aria-label="Loading FocusFlow"><div class="loader-mark">✦</div><strong>focusflow</strong><p>Make space for what matters</p><i></i></section>
+  <section class="welcome-screen" id="welcomeScreen">
+    <header class="welcome-nav"><a class="welcome-brand" href="#"><span class="brand-mark">✦</span> focusflow</a><div><a href="#">How it works</a><a href="#">Features</a><button id="navSignIn">Sign in</button></div></header>
+    <main class="welcome-main"><div class="welcome-copy"><p class="trust-pill">✦ &nbsp; Your calm command center</p><h1>Make every day<br><i>count.</i></h1><p>FocusFlow turns scattered to-dos into a clear, intentional plan—so you can spend less time organizing and more time moving forward.</p><div class="welcome-cta"><button id="getStarted">Get started for free &nbsp; →</button><small>No credit card required</small></div><div class="people"><b>J</b><b>M</b><b>A</b><span>Trusted by people who value their time</span></div></div><div class="hero-card"><small>Today, October 9</small><h2>A focused day starts here.</h2><div class="hero-progress">Daily progress <strong>3 of 5 complete</strong><i><b></b></i></div><article><em>✓</em><div><strong>Finish project brief</strong><small>● Work · Today</small></div></article><article><em></em><div><strong>Review weekly goals</strong><small>● Personal · Today</small></div></article><article><em></em><div><strong>Plan tomorrow's priorities</strong><small>● Planning · Today</small></div></article><footer>✦ &nbsp; <span><strong>Stay in the flow.</strong><br>Small steps create meaningful progress.</span></footer></div></main>
+    <section class="plans" id="plans"><div class="plans-intro"><span>CHOOSE YOUR FLOW</span><h2>Simple plans. More room to focus.</h2><p>Start free, then grow into the workspace that suits you.</p></div><div class="plan-grid"><article class="plan"><span>FREE</span><h3>$0 <small>/ month</small></h3><p>For getting organized.</p><ul><li>Personal task lists</li><li>Pomodoro timer</li><li>Up to 2 projects</li></ul><button data-plan="Free">Choose Free</button></article><article class="plan featured"><b>Most popular</b><span>PRO</span><h3>$8 <small>/ month</small></h3><p>For focused collaboration.</p><ul><li>Everything in Free</li><li>Unlimited projects</li><li>Partner discussion space</li></ul><button data-plan="Pro">Choose Pro</button></article><article class="plan"><span>VIP</span><h3>$18 <small>/ month</small></h3><p>For your highest-impact work.</p><ul><li>Everything in Pro</li><li>Priority support</li><li>Advanced insights</li></ul><button data-plan="VIP">Choose VIP</button></article></div></section>
+    <footer class="welcome-footer">Designed for thoughtful productivity. <span>01 &nbsp; — &nbsp; Clear your mind &nbsp; — &nbsp; Focus on what matters</span></footer>
+  </section>
+  <section class="checkout-screen" id="checkoutScreen">
+    <div class="checkout-card"><button class="back-plan" id="backToPlans">← Back to plans</button><div class="checkout-plan"><span id="checkoutBadge">PRO PLAN</span><h1>Set up your workspace.</h1><p id="checkoutDescription">A few details and your focused workspace will be ready.</p><div class="checkout-price"><strong id="checkoutPrice">$8</strong><span>per month<br>cancel anytime</span></div></div><form id="checkoutForm"><label>Your name<input id="checkoutName" required placeholder="Your full name"></label><label>Work email<input id="checkoutEmail" required type="email" placeholder="you@company.com"></label><label>Workspace name<input id="checkoutWorkspace" required placeholder="e.g. Brightside Studio"></label><label>Billing preference<select id="checkoutBilling"><option>Monthly billing</option><option>Yearly billing — save 20%</option></select></label><p class="secure-note">✦ This is a demo checkout. No payment information is collected.</p><button class="activate-plan" type="submit">Continue with <span id="activatePlan">Pro</span> →</button></form></div>
+  </section>
+  <section class="onboarding-screen" id="onboardingScreen"><div class="onboarding-card"><span class="tiny-logo">✦</span><p class="step-label">STEP 1 OF 1</p><h1>Tell us about your workspace.</h1><p>We’ll personalize FocusFlow around the way you work.</p><form id="onboardingForm"><label>Your name<input id="onboardingName" required></label><label>Email address<input id="onboardingEmail" type="email" required readonly></label><label>Your role<select id="onboardingRole"><option>Student</option><option>Creator</option><option>Professional</option><option>Team lead</option><option>Other</option></select></label><label>Workspace name<input id="onboardingWorkspace" required placeholder="e.g. Ransh’s workspace"></label><label>Partner name <small>(optional)</small><input id="onboardingPartner" placeholder="Who do you collaborate with?"></label><button type="submit">Create my workspace →</button></form></div></section>
+  <section class="auth-screen" id="authScreen">
+    <div class="auth-panel">
+      <div class="auth-art"><a class="brand" href="#"><span class="brand-mark">✦</span> focusflow</a><div class="art-copy"><span class="spark">✦</span><h1>Make space<br>for what matters.</h1><p>A calmer way to organize your day, one focused task at a time.</p></div><div class="art-stats"><span>✓</span> Join 12,000+ people building better days</div></div>
+      <div class="sign-in-card"><div class="signin-heading"><span class="tiny-logo">✦</span><h2>Welcome to FocusFlow</h2><p>Sign in to save your tasks and access them anywhere.</p></div><button class="oauth google" data-provider="Google"><b class="google-g">G</b> Continue with Google</button><button class="oauth microsoft" data-provider="Microsoft"><i class="ms-logo"><em></em><em></em><em></em><em></em></i> Continue with Microsoft</button><div class="divider"><span>or continue with email</span></div><label class="email-label">Username<input id="usernameInput" maxlength="20" placeholder="e.g. alex_writes"><small class="field-error" id="usernameError"></small></label><label class="email-label">Email address<input id="emailInput" type="email" placeholder="you@example.com"></label><button class="email-signin" id="emailSignin">Continue with email <span>→</span></button><p class="terms">By continuing, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p></div>
+    </div>
+  </section>
+  <main class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">✦</span> focusflow</a>
+      <nav class="nav" aria-label="Task views">
+        <button class="nav-item active" data-filter="today"><span>◉</span> Today <b id="todayCount">0</b></button>
+        <button class="nav-item" data-filter="upcoming"><span>◌</span> Upcoming</button>
+        <button class="nav-item" data-filter="all"><span>☷</span> All tasks</button>
+        <button class="nav-item" data-filter="completed"><span>✓</span> Completed</button>
+      </nav>
+      <div class="projects-head"><span>PROJECTS</span><button id="newProject" aria-label="Add project">+</button></div>
+      <div class="projects" id="projects"></div>
+      <button class="sidebar-bottom" id="accountMenu"><div class="mini-avatar" id="userInitial">R</div><div><strong id="userName">My workspace</strong><small id="userEmail">Personal space</small></div><span class="chev">⌄</span></button>
+    </aside>
+
+    <section class="content">
+      <header class="topbar"><button class="mobile-menu" aria-label="Open navigation">☰</button><div class="top-actions"><button class="notification-button" id="enableNotifications" title="Enable laptop reminders">♢ <span>Reminders</span></button><button id="themeToggle" title="Toggle theme">◐</button><button class="avatar" id="topAvatar">R</button></div></header>
+      <section class="view-header">
+        <div><p class="eyebrow" id="dateLabel"></p><h1 id="viewTitle">Today</h1><p class="subtitle" id="viewSubtitle">A little progress each day adds up.</p></div>
+        <div class="progress-card"><div class="progress-copy"><span>Daily progress</span><strong id="progressText">0 of 0</strong></div><div class="ring" id="progressRing"><span>0%</span></div></div>
+      </section>
+      <section class="quick-add">
+        <input id="taskInput" placeholder="What needs to get done?" aria-label="New task title" />
+        <select id="quickProject" aria-label="Project"><option value="Personal">Personal</option></select>
+        <select id="quickPriority" aria-label="Priority"><option value="medium">Medium</option><option value="high">High</option><option value="low">Low</option></select>
+        <input id="quickDate" type="date" aria-label="Due date" />
+        <input id="quickTime" type="time" aria-label="Due time" />
+        <select id="quickRepeat" aria-label="Repeat schedule"><option value="none">Does not repeat</option><option value="daily">Repeats daily</option><option value="weekly">Repeats weekly</option></select>
+        <button id="addTask">Add task <span>↵</span></button>
+      </section>
+      <div class="list-toolbar"><span id="taskSummary">0 tasks</span><div><button class="sort-btn" id="sortBtn">⇅ Sort: due date</button><button class="more-btn">•••</button></div></div>
+      <div class="task-list" id="taskList"></div>
+      <div class="empty-state" id="emptyState"><div>✦</div><h2>Nothing here yet</h2><p>Add a task above and make room for what matters.</p></div>
+      <section class="tools-grid">
+        <article class="pomodoro-card"><div class="tool-heading"><div><span class="tool-kicker">FOCUS TIMER</span><h2>Pomodoro</h2></div><button id="timerMode">Focus</button></div><div class="timer-face" id="timerDisplay">25:00</div><p id="timerStatus">Ready for a focused session.</p><div class="timer-actions"><button class="primary-timer" id="timerStart">Start focus</button><button class="timer-reset" id="timerReset" aria-label="Reset timer">↻</button></div><div class="pomodoro-dots"><i class="active"></i><i></i><i></i><i></i><span>0 sessions today</span></div></article>
+        <article class="discussion-card"><div class="tool-heading"><div><span class="tool-kicker">PROJECT SPACE</span><h2>Discuss with your partner</h2></div><button class="partner-name" id="partnerNameButton">Name partner</button></div><div class="partner-status"><span>●</span> <b id="partnerStatusName">Alex</b> is online</div><div class="message-list" id="messageList"><div class="message partner"><b class="partner-label">Alex</b><p>I added the outline for the Monday presentation. Could you review the key points?</p><small>10:24 AM</small></div><div class="message mine"><b>You</b><p>Absolutely — I’ll look at it after I finish the brief.</p><small>10:27 AM</small></div></div><form class="message-form" id="messageForm"><input id="messageInput" placeholder="Write a project update…" autocomplete="off"><button aria-label="Send message">↑</button></form></article>
+      </section>
+    </section>
+  </main>
+  <div class="toast" id="toast"></div>
+  <div class="account-popover" id="accountPopover"><p>Signed in as</p><strong id="popoverEmail"></strong><button id="signOut">Sign out</button></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
